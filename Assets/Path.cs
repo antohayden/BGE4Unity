@@ -39,11 +39,11 @@ public class Path
     {
         for (int i = 1 ; i < waypoints.Count ; i ++)
         {
-            LineDrawer.DrawLine(waypoints[i - 1], waypoints[i], Color.cyan);
+            LineDrawer.DrawLine(waypoints[i - 1], waypoints[i], Color.red);
         }
         if (Looped)
         {
-            LineDrawer.DrawLine(waypoints[waypoints.Count - 1], waypoints[0], Color.cyan);
+            LineDrawer.DrawLine(waypoints[waypoints.Count - 1], waypoints[0], Color.red);
         }
     }
 
