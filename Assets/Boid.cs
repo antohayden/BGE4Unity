@@ -24,6 +24,7 @@ public class Boid : MonoBehaviour {
     public bool pursueEnabled;
     public bool arriveEnabled;
 
+    [Header("Offset Pursuit")]
     public bool offsetPursueEnabled;
     public GameObject offsetPursueTarget;
     public Vector3 offset;
@@ -51,7 +52,7 @@ public class Boid : MonoBehaviour {
         {
             if (offsetPursueTarget != null)
             {
-                offset = offsetPursueTarget.transform.position - transform.position;
+               // offset = offsetPursueTarget.transform.position - transform.position;
             }
         }
         path.Looped = Looped;
